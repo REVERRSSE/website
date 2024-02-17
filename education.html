@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation Form</title>
+    <link rel="stylesheet" href="style for education.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="accountCreationForm">
+            <h2>Create Your Account</h2>
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890">
+            </div>
+            <div class="input-group">
+                <label for="securityQuestion">Security Question</label>
+                <select id="securityQuestion" name="securityQuestion">
+                    <option value="">Select a question</option>
+                    <option value="pet">What is the name of your first pet?</option>
+                    <option value="motherMaidenName">What is your mother's maiden name?</option>
+                    <option value="birthCity">In what city were you born?</option>
+                </select>
+                <input type="text" id="securityAnswer" name="securityAnswer" required placeholder="Answer">
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>

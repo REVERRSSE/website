@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 100px; /* Adjust this value to the height of your navigation bar */
+    /* Other styles... */
+}
+
+
+#videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* This will ensure the aspect ratio is maintained while covering the entire viewport */
+    z-index: -100; /* Behind everything */
+}
+
+
+header {
+    background-color: white;
+    padding: 10px 5%;
+    text-align: center;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+header > * {
+    display: inline-block;
+    width: 450px;
+}
+
+.pustota {
+    display: inline-block;
+    width: 10%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Increase the height as desired */
+    background-color: #FFFFFF; /* Or any color you want */
+    z-index: 1000;
+}
+
+a {
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.nav-title {
+    float: left; /* Aligns the title to the left side of the navigation bar */
+    line-height: 60px;
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 18px;
+    float: right;
+    line-height: 60px; /* Make this the same as the height of the nav if you want the text vertically centered */
+    padding: 0 15px; /* Increase padding as desired for more space */
+}
+
+nav a:hover {
+    color: grey;
+}
+
+.banner {
+    padding: 20% 5%;
+    color: white;
+    font-size: 30px;
+}
+
+.post {
+    background-color: white;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+.post > * {
+    display: inline-block;
+    width: 450px;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.razryv {
+    height: 350px;
+}
+
+#final {
+    background-image: url('pattern.jpg');
+    background-attachment: fixed;
+    padding: 15% 30%;
+}
+
+#final > div {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    border: 4px solid black;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
